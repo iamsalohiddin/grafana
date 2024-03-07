@@ -32,6 +32,9 @@ jobs:
     - name: Install kubectl
       run: sudo apt-get install -y kubectl
 
+    - name: Install kubens
+      run: sudo apt-get install -y kubens
+
     - name: Create ns grafana
       run: |
          kubectl create ns grafana
