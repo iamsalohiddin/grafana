@@ -33,7 +33,9 @@ jobs:
       run: sudo apt-get install -y kubectl
 
     - name: Create ns grafana
-      run: kubectl create ns grafana
+      run: |
+         kubectl create ns grafana
+         kubens grafana
 
     - name: Install Helm
       run: |
